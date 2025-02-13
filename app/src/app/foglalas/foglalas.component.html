@@ -1,0 +1,15 @@
+
+<html>
+    <head>
+        <link rel="stylesheet" href="foglalas.component.css">
+    </head>
+    <body>
+        <p>foglalas works!</p>
+        <form [formGroup]="foglalsok" (ngSubmit)="adatBe()">
+            <input formControlName="nev" placeholder="Név" />
+            <input formControlName="email" type="email" placeholder="Email" />
+            <input formControlName="date" type="date" />
+            <button type="kuld" mat-button color="primary">Foglalás</button>
+          </form>
+    </body>
+</html>

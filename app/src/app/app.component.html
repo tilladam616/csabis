@@ -1,0 +1,8 @@
+<div class="app-content">
+  <form [formGroup]="bookingForm" (ngSubmit)="submitForm()">
+    <input formControlName="nev" placeholder="Név" />
+    <input formControlName="email" type="email" placeholder="Email" />
+    <input formControlName="date" type="date" />
+    <button type="kuld" mat-button color="primary">Foglalás</button>
+  </form>
+</div>
